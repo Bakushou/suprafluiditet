@@ -1,13 +1,22 @@
 # Publicera Suprafluiditet gratis med GitHub Pages
 
-1. Skapa ett offentligt repository på GitHub, exempelvis `suprafluiditet`.
-2. Packa upp ZIP-filen och ladda upp allt innehåll till repositoryts rot.
-3. Gå till **Settings → Pages**.
-4. Under **Build and deployment**, välj **Deploy from a branch**.
-5. Välj branchen `main` och mappen `/ (root)`, tryck **Save**.
+Det här paketet är färdigbyggt. Installera inget och ändra inga filnamn.
 
-Efter någon minut finns sajten på:
+1. Packa upp ZIP-filen på din dator.
+2. Öppna ditt GitHub-repository och välj **Add file → Upload files**.
+3. Dra **allt innehåll i den uppackade mappen samtidigt** till uppladdningsrutan. Mapparna `assets` och `media` måste synas i listan innan du bekräftar.
+4. Vänta tills samtliga filer laddats upp och välj **Commit changes**.
+5. Gå till **Settings → Pages**.
+6. Under **Build and deployment**, välj **Deploy from a branch**, branchen `main` och mappen `/ (root)`. Tryck **Save**.
 
-`https://DITT_ANVÄNDARNAMN.github.io/suprafluiditet/`
+Sajten publiceras normalt på:
 
-Filerna är redan byggda. Du behöver alltså inte installera Node eller köra någon kod. Resurserna använder relativa länkar, så sajten fungerar även när repositoryt ligger under en undermapp.
+`https://DITT_ANVÄNDARNAMN.github.io/REPOSITORYNAMNET/`
+
+## Kontrollera före publicering
+
+Repositoryts rot ska innehålla `index.html`, `.nojekyll`, `book-source.html`, PDF- och DOCX-filerna samt mapparna `assets` och `media`.
+
+- `assets` innehåller all design och JavaScript. Om den saknas blir sidan vit och knapparna slutar fungera.
+- `media` innehåller originaldokumentets två diagram.
+- Länkarna är relativa och fungerar därför även när repositoryt publiceras i en undermapp.

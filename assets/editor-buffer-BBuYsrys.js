@@ -1,1 +1,0 @@
-import{xt as e}from"./site-switcher-Bb_Q5Gyr.js";var t=e({flushBaiblemEditor:()=>i,registerBaiblemEditor:()=>r}),n;function r(e){return n=e,()=>{n===e&&(n=void 0)}}async function i(){return n?n():!0}export{r as n,t};

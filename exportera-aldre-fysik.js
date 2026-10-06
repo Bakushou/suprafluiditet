@@ -1,4 +1,4 @@
-/* Kör endast på din gamla Suprafluiditet-sida. Läser dess egna lokala data.
+/* Kör endast ppå din gamla Suprafluiditet-sida. Läser dess egna lokala data.
    Inga data skickas till någon server. Resultatet laddas ned som en JSON-fil. */
 (()=>{
  const stores={entities:[],versions:[],progress:[],reviews:[],knowledge:[],settings:[],attachments:[]};
